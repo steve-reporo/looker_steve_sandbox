@@ -756,6 +756,7 @@
       )
 
 
+
 #MEASURES
 
 #   - measure: count
@@ -822,54 +823,9 @@
     type: number
     sql: 1000 * ${total_revenue}/${total_clicks}
     value_format: '"$"#,##0.0000'
-    
-    
-    
-    
-    ##
-    # My Mods
-    ##
-#       - dimension: affiliate_id
-#     view_label: 'Affiliate Fields'
-#   
-#     type: number
-#     value_format_name: id  - dimension: zone_group
-#     group_label: Zone
-#     type: number
-#     sql: ${TABLE}.zonegroup  
-# 
-#   
-#   - dimension: zone_group_name
-#     type: string
-#     sql: |
-#         CASE
-#           WHEN BOOLEAN(${zone_group} & 1) THEN 'Adult 2.7+'
-#           WHEN BOOLEAN(${zone_group} & 2) THEN 'Glam Uncategorised'
-#           WHEN BOOLEAN(${zone_group} & 4) THEN 'Non Adult'
-#           WHEN BOOLEAN(${zone_group} & 8) THEN 'Gay'
-#           WHEN BOOLEAN(${zone_group} & 16) THEN 'Test/Fraud'
-#           WHEN BOOLEAN(${zone_group} & 32) THEN 'Redirect'          
-#           WHEN BOOLEAN(${zone_group} & 64) THEN 'Redirect' 
-#           WHEN BOOLEAN(${zone_group} & 128) THEN 'Gambling'
-#           WHEN BOOLEAN(${zone_group} & 256) THEN 'Redirect Premium'
-#           WHEN BOOLEAN(${zone_group} & 512) THEN 'Popunder Members'
-#           WHEN BOOLEAN(${zone_group} & 1024) THEN 'Popunder Gay'
-#           WHEN BOOLEAN(${zone_group} & 2048) THEN 'Redirect Gay'
-#           WHEN BOOLEAN(${zone_group} & 4096) THEN 'Redirect Exit'
-#           WHEN BOOLEAN(${zone_group} & 8192) THEN 'Glam'
-#           WHEN BOOLEAN(${zone_group} & 16384) THEN 'Push'
-#           WHEN BOOLEAN(${zone_group} & 32768) THEN 'Mainstream Banner'
-#           WHEN BOOLEAN(${zone_group} & 65536) THEN 'Mainstream Popunder'
-#           WHEN BOOLEAN(${zone_group} & 131072) THEN 'Mainstream Fraud'
-#           WHEN BOOLEAN(${zone_group} & 524288) THEN 'Mainstream Popunder Bikini'
-#           WHEN BOOLEAN(${zone_group} & 262144) THEN 'Desktpo Banner'
-#           WHEN BOOLEAN(${zone_group} & 1048576) THEN 'Desktop Popunder'
-#           WHEN BOOLEAN(${zone_group} & 2097152) THEN 'Native Widget'
-#           WHEN BOOLEAN(${zone_group} & 4194304) THEN 'Native Desktop Widget'
-#           
-#         END
   
-#     sql: ${TABLE}.affiliateid
+  
+
     
     
     
